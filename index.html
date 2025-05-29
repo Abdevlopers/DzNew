@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-adsense-account" content="ca-pub-6073667196235707">
   <title>متجري الخاص</title>
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
-  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     (function(){
@@ -208,41 +206,11 @@
     <a href="#" id="max">0</a>
   </nav>
 </header>
-<amp-ad
-     layout="fixed"
-     width="250"
-     height="40"
-     type="adsense"
-     data-ad-client="ca-pub-6073667196235707"
-     data-ad-slot="1839893027">
-</amp-ad>
+
 <div class="cart" id="cart">
     <a href="#" style="color: red; text-align: left;" id="hidecart"><i class='bx bx-x-circle'></i></a>
   <h3>سلة المشتريات</h3>
-  <div id="cart-items">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6073667196235707"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
-     data-ad-client="ca-pub-6073667196235707"
-     data-ad-slot="1235805407"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6073667196235707"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="+3q+p9-1l-4d+t6"
-     data-ad-client="ca-pub-6073667196235707"
-     data-ad-slot="3937156210"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  </div>
+  <div id="cart-items"></div>
   <form class="checkout-form" onsubmit="sendOrder(event)">
     <input type="text" id="name" placeholder="الاسم الكامل" required />
     <input type="text" id="phone" placeholder="رقم الهاتف" required />
@@ -262,19 +230,10 @@
       <option value="">اختر بلدية</option>
     </select>
     <textarea id="address" placeholder="العنوان الكامل مثال : (الولاية+الدائرة+البلدية+الشارع)" required></textarea>
-    <button type="submit" >إرسال الطلب</button>
+    <button type="submit">إرسال الطلب</button>
   </form>
 </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6073667196235707"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-6073667196235707"
-     data-ad-slot="4291319949"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 <section class="section" id="products">
   <h2 class="section-title">منتجاتي</h2>
   <div class="products" id="product-list"></div>
@@ -408,7 +367,6 @@ function removeFromCart(index) {
   renderProducts();
 </script>
 <script src="JS/Wilaya.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6073667196235707"
-     crossorigin="anonymous"></script>
 </body>
 </html>
+
