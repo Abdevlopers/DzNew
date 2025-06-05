@@ -6,6 +6,9 @@ let products = [];
 let cart = [];
 let totalprodects = 0;
 
+function showbtncart() {
+  cartp.style.display = 'block';
+};
 showcart.addEventListener('click', () => {
  cartp.style.display = 'block';
 });

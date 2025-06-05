@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link type="image/png" sizes="16x16" rel="icon" href="icon/icons8-shop-16.png">
-  <title></title>
+  <link type="image/png" sizes="96x96" rel="icon" href="icon/icons8-shop-100 (1).png">
+  <title>Bab ElRahba - باب الرحبة</title>
   <link rel="stylesheet" href="css/btn-styles.css">
   <link rel="stylesheet" href="css/Main.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6073667196235707" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     (function(){
@@ -19,16 +18,16 @@
 </head>
 <body>
 <header>
-  <h1><img src="icon/icons8-shop-100.png" width="50px" style="position: relative; top: 15px;">باب الرحبة</h1>
+  <h1><img src="icon/icons8-shop-100 (1).png" width="50px" style="position: relative; top: 15px;">باب الرحبة</h1>
 
 <div class="container">
-  <input type="checkbox" id="label-check" class="label-check" />
-  <label class="hamburger-label" for="label-check">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-    <label></label
-  ></label>
+<button data-quantity="0" class="btn-cart" onclick="showbtncart()">
+  <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+    <title>icon-cart</title>
+    <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+  </svg>
+  <span class="quantity"></span>
+</button>
 </div>
 
   <nav class="nav">
@@ -56,19 +55,7 @@
 <div class="cart" id="cart">
     <a href="#close card" style="color: red; position: relative; left: -90%; font-size: 30px;" id="hidecart"><i class='bx bx-x-circle'></i></a>
   <h3>سلة المشتريات</h3>
-  <div id="cart-items">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6073667196235707"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="+3q+p9-1l-4d+t6"
-     data-ad-client="ca-pub-6073667196235707"
-     data-ad-slot="2303444685"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  </div>
+  <div id="cart-items"></div>
   <form class="checkout-form" onsubmit="sendOrder(event)">
     <input type="text" id="name" placeholder="الاسم الكامل" required />
     <input type="text" id="phone" placeholder="رقم الهاتف" required />
@@ -87,7 +74,7 @@
     <select id="commune" class="select">
       <option value="">اختر بلدية</option>
     </select>
-    <textarea id="address" placeholder="العنوان الكامل مثال : (الولاية+الدائرة+البلدية+الشارع)" required></textarea>
+    <textarea id="address" placeholder="ان لم تجد عنوانك ادخله هنا" required></textarea>
     <!-- From Uiverse.io by adamgiebl --> 
 <button type="submit" class="sndbutton">
   <div class="svg-wrapper-1">
@@ -111,12 +98,10 @@
 
   </form>
 </div>
+
 <section class="section" id="products">
   <h2 class="section-title">منتجاتي</h2>
-  <div class="products" id="product-list">
-    <ins class="1ae14e5c" data-key="e888ef702e5155edefa64d80a6f90336"></ins>
-<script async src="https://cdn.epomadserver.com/7ac6b640.js"></script>
-  </div>
+  <div class="products" id="product-list"></div>
 </section>
 <script src="JS/Main.js"></script>
 <script src="JS/Wilaya.js"></script>
